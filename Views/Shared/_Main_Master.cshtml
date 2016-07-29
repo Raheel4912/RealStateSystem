@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/bootstrap-combined.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color : whitesmoke;
+            
+        }
+        img{
+            opacity : 0.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>Real State System</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="/Admin/Home">Home</a></li>
+                    <li><a href="/Admin/NewFlat">New Flat</a></li>
+                    <li><a href="/Admin/AssignFlat">Assign New Flat</a></li>
+                    <li><a href="/Admin/CustomerPayment">Customer Payment Update</a></li>
+                    <li><a href="/Admin/Defaulter">Defaulter</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                @RenderBody()
+            </div>
+
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
