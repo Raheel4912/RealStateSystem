@@ -1,7 +1,41 @@
 ﻿@{
     Layout = "~/Views/Shared/_Main_Master.cshtml";
+    ViewBag.Title = "Admin Home";
 }
 
 <div>
-    <h2>Welcome to The RealState Management System Admin Panel</h2>
+    <fieldset>
+        <legend style="color:gray">Admin Panel</legend>
+        <br />
+        <div id="myCarousel" class="carousel slider" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="../images/slider3.jpg" height="1000">
+
+                </div>
+                <div class="item">
+                    <img src="../images/slider2.jpg">  
+
+
+                </div>
+                <div class="item">
+                    <img src="../images/slider1.jpg">  
+                </div>
+                <div class="item">
+                    <img src="../images/slider2.jpg">
+                </div>
+
+
+            </div>
+        </div>
+    </fieldset>
 </div>
+
+
+

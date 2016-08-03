@@ -1,0 +1,89 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Login.cshtml";
+}
+
+
+<script>
+    $(document).ready(function () {
+
+        //$('#btnSave').click(function (event) {
+        //    //alert('hun aya hai ');
+        //    event.preventDefault();
+        //    var element = this;
+        //    $.getJSON("/Login/Validation?UId=" + $('#userId').val() + "&password2=" + $('#password1').val(),
+        //         function (data) {
+        //             if (data == true) {
+        //                 //alert('ab alert mai hai ');
+        //                 $(element).closest('form').submit();
+        //                 //return true;
+        //             }
+        //             else {
+        //                 alert('ab alert mai nahi hai');
+        //                 $('#errorMsg').text("Your UserId or Password is Incorrect");
+        //             }
+        //         }
+        //     );
+        //});
+
+        function validation() {
+
+            // alert('hello');
+
+        }
+    });
+</script>
+@*<form method="post" action="/Login/Main" id="loginForm">
+    <input type="text" id="userId" placeholder="Please Enter Your User Name" /> <br />
+    <input type="password" id="password1" placeholder="Please Enter Passowrd" /> <br />
+    <p id="errorMsg"></p><br />
+    <input type="submit" value="Login" id="btnSave" />
+</form>*@
+<div class="container">
+    <div class="row">
+
+        <h1>Login</h1>
+
+        <form class="form-horizontal" method="post" action="/Admin/Home" id="loginForm">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend>Form</legend>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="email_login">User ID:</label>
+                    <div class="col-md-4">
+                        <input id="userId" name="email_login" type="text" placeholder="Enter User Id" class="form-control input-md" required="">
+
+                    </div>
+                    <div class="col-md-6"></div>
+                </div>
+
+                <!-- Password input-->
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="password_login">Password:</label>
+                    <div class="col-md-4">
+                        <input id="password1" name="password_login" type="password" placeholder="●●●●●" class="form-control input-md" required="">
+
+                    </div>
+                    <div class="col-md-6"></div>
+                </div>
+
+                <!-- Multiple Checkboxes (inline) -->
+                <!-- Button -->
+                
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="singlebutton"></label>
+                    <div class="col-md-4">
+                        <input id="btnSave" type="submit" name="singlebutton" class="btn btn-primary" value="Login">
+                    </div>
+                    <div class="col-md-6" ><p id="errorMsg"></p></div>
+                </div>
+
+            </fieldset>
+        </form>
+
+    </div>
+</div>
+

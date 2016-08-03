@@ -14,7 +14,8 @@
     <link href="~/css/bootstrap.css" rel="stylesheet" />
     <link href="~/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/css/bootstrap-combined.min.css" rel="stylesheet" />
-    
+
+
     <link href="../css/slider.css" rel="stylesheet" type="text/css" media="all" />
     <style>
         body {
@@ -23,10 +24,6 @@
 
         img {
             opacity: 1.4;
-        }
-        a {
-            color:black;
-            font-size:18px;
         }
     </style>
 </head>
@@ -41,21 +38,13 @@
 
             </div>
             <div class="col-md-3">
-                <a href="/Home/Index"  style="color:Blue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logout</a>
+                <a href="/Home/Index">Logout</a>
             </div>
 
         </div>
-        <br />
         <div class="row">
-            <div class="col-md-3" style="border-right:1px solid gray; height:500px;font:white;">
-                <ul class="nav nav-pills nav-stacked" >
-                    
-                    <li ><a href="/Admin/Home">Home</a></li>
-                    <li><a href="/Admin/NewFlat">New Flat</a></li>
-                    <li><a href="/Admin/AssignFlat">Assign New Flat</a></li>
-                    <li><a href="/Admin/CustomerPayment">Customer Payment Update</a></li>
-                    <li><a href="/Admin/Defaulter">Defaulter</a></li>
-                </ul>
+            <div class="col-md-3">
+
             </div>
             <div class="col-md-9">
                 @RenderBody()
@@ -64,7 +53,7 @@
         </div>
 
     </div>
-    
+
     <div class="footer">
         <div class="wrap">
             <div class="footer-grid">
@@ -99,12 +88,12 @@
         <div class="clear"> </div>
     </div>
     @*<div class="copy-right">
-        <div class="top-to-page">
-            <a href="#top" class="scroll"> </a>
-            <div class="clear"> </div>
-        </div>
-        <p>Design by <a href="#"></a></p>
-    </div>*@
+            <div class="top-to-page">
+                <a href="#top" class="scroll"> </a>
+                <div class="clear"> </div>
+            </div>
+            <p>Design by <a href="#"></a></p>
+        </div>*@
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
 </body>
